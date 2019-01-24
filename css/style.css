@@ -1,8 +1,14 @@
 /* CSS TABLE OF CONTENTS 
 
-#TYPOGRAPHY
-    #BODY
+# TYPOGRAPHY
+    # BODY
+    # LINKS
+    # HEADING
 
+# STRUCTURE
+    # HEADER
+    # FOOTER
+    # NAV
 */
 
 body {
@@ -14,10 +20,75 @@ body {
     padding: 1em;
 }
 
+p {
+    max-width: 35em;
+}
+
 a {
-    color: rgba()
+    color: rgba(0,0,255,0.4);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(0,0,255,1);
 }
 
 h1 {
     font-size: 3em;
+}
+
+/* HELPER CLASSES */
+
+.text-centered {
+    text-align: center;
+}
+
+.site-header,
+.site-footer {
+    text-align: center;
+}
+
+.site-header {
+    
+}
+
+.site-navigation ul {
+    padding: 0;
+}
+
+.site-navigation ul li {
+    display: inline-block;
+}
+
+.site-navigation ul li a {
+    display: block;
+    padding: 1em;
+}
+
+/* MEDIA */
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* THUMBGRID */
+
+.thumbgrid {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.thumbgrid li {
+    list-style: none;
+    width: 49.5%;
+    padding-bottom: .4%;
+}
+
+@media (min-width: 768px) {
+    .thumbgrid li {
+        width: 24.5%;
+    } 
 }
